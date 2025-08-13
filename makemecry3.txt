@@ -7,6 +7,14 @@ local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "WARNING";
+    Text = "This library is a fork of the original project with custom modifications and is fully supported";
+    Icon = "rbxassetid://12345678";
+    Duration = 5;
+})
 
 local redzlib = {
 	Themes = {
